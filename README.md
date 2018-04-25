@@ -14,7 +14,7 @@
 > 美其名曰："practice makes perfect."  
 > 为何今不如古？  
 > 非也非也，  
-> 科举为国取士，LeetCode 为 Google 筛码工，各取所需也。  
+> 科举为国取士，LeetCode 为 CCPC 筛金奖，各取所需也。  
 
 ---
 ## Easy
@@ -97,7 +97,7 @@
 | 68   | [Text Justification](http://www.leetcode.com/)                | String                                   |
 ---
 
-# [Two Sum](http://www.leetcode.com/)
+# [001: Two Sum](http://www.leetcode.com/)
 
 ## Description
 
@@ -157,7 +157,7 @@ class Solution {
 ```
 
 
-# [Add Two Numbers](http://www.leetcode.com/)
+# [002: Add Two Numbers](http://www.leetcode.com/)
 
 ## Description
 
@@ -214,7 +214,7 @@ class Solution {
 ```
 
 
-# [Longest Substring Without Repeating Characters](http://www.leetcode.com/)
+# [003: Longest Substring Without Repeating Characters](http://www.leetcode.com/)
 
 ## Description
 
@@ -241,7 +241,7 @@ class Solution {
         int len;
         if (s == null || (len = s.length()) == 0) return 0;
         int preP = 0, max = 0;
-        int[] hash = new int(http://www.leetcode.com/);
+        int[] hash = new int[128];
         for (int i = 0; i < len; ++i) {
             char c = s.charAt(i);
             if (hash[c] > preP) {
@@ -257,7 +257,7 @@ class Solution {
 ```
 
 
-# [Median of Two Sorted Arrays](http://www.leetcode.com/)
+# [004: Median of Two Sorted Arrays](http://www.leetcode.com/)
 
 ## Description
 
@@ -338,7 +338,7 @@ class Solution {
 ```
 
 
-# [Longest Palindromic Substring](http://www.leetcode.com/)
+# [005: Longest Palindromic Substring](http://www.leetcode.com/)
 
 ## Description
 
@@ -492,7 +492,7 @@ lool -> #l#o#o#l#
 
 
 
-# [ZigZag Conversion](http://www.leetcode.com/)
+# [006: ZigZag Conversion](http://www.leetcode.com/)
 
 ## Description
 
@@ -594,7 +594,7 @@ class Solution {
 ```
 
 
-# [Reverse Integer](http://www.leetcode.com/)
+# [007: Reverse Integer](http://www.leetcode.com/)
 
 ## Description
 
@@ -644,7 +644,7 @@ class Solution {
 ```
 
 
-# [String to Integer (atoi)](http://www.leetcode.com/)
+# [008: String to Integer (atoi)](http://www.leetcode.com/)
 
 ## Description
 
@@ -696,7 +696,7 @@ class Solution {
 ```
 
 
-# [Palindrome Number](http://www.leetcode.com/)
+# [009: Palindrome Number](http://www.leetcode.com/)
 
 ## Description
 
@@ -754,7 +754,7 @@ class Solution {
 ```
 
 
-# [Regular Expression Matching](http://www.leetcode.com/)
+# [010: Regular Expression Matching](http://www.leetcode.com/)
 
 ## Description
 
@@ -784,7 +784,7 @@ isMatch("aab", "c*a*b") → true
 
 ## 思路 0
 
-题意是让让你从判断 `s` 字符串是否正则匹配于 `p`，这道题和 [Wildcard Matching](http://www.leetcode.com/) 很是相似，区别在于 `*`，通配符的 `*` 是可以随意出现的，跟前面字符没有任何关系，其作用是可以表示任意字符串；而正则匹配的 `*` 不能单独存在，前面必须具有一个字符，其意义是表明前面的这个字符个数可以是任意个数，包括 0 个。首先我们用递归的方式来实现，其思路如下：
+题意是让让你从判断 `s` 字符串是否正则匹配于 `p`，这道题和 [Wildcard Matching][044] 很是相似，区别在于 `*`，通配符的 `*` 是可以随意出现的，跟前面字符没有任何关系，其作用是可以表示任意字符串；而正则匹配的 `*` 不能单独存在，前面必须具有一个字符，其意义是表明前面的这个字符个数可以是任意个数，包括 0 个。首先我们用递归的方式来实现，其思路如下：
 
 * 如果 `s` 和 `p` 都为空，那么返回 `true`；
 
@@ -881,7 +881,7 @@ class Solution {
 ```
 
 
-# [Container With Most Water](http://www.leetcode.com/)
+# [011: Container With Most Water](http://www.leetcode.com/)
 
 ## Description
 
@@ -920,7 +920,7 @@ class Solution {
 ```
 
 
-# [Integer to Roman](http://www.leetcode.com/)
+# [012: Integer to Roman](http://www.leetcode.com/)
 
 ## Description
 
@@ -956,7 +956,7 @@ class Solution {
 ```
 
 
-# [Roman to Integer](http://www.leetcode.com/)
+# [013: Roman to Integer](http://www.leetcode.com/)
 
 ## Description
 
@@ -1005,7 +1005,7 @@ class Solution {
 ```
 
 
-# [Longest Common Prefix](http://www.leetcode.com/)
+# [014: Longest Common Prefix](http://www.leetcode.com/)
 
 ## Description
 
@@ -1035,7 +1035,7 @@ class Solution {
 ```
 
 
-# [3Sum](http://www.leetcode.com/)
+# [015: 3Sum](http://www.leetcode.com/)
 
 ## Description
 
@@ -1093,7 +1093,7 @@ class Solution {
 ```
 
 
-# [3Sum Closest](http://www.leetcode.com/)
+# [016: 3Sum Closest](http://www.leetcode.com/)
 
 ## Description
 
@@ -1110,7 +1110,7 @@ Given an array *S* of *n* integers, find three integers in *S* such that the sum
 
 ## 思路
 
-题意是让你从数组中找出最接近 `target` 的三个数的和，该题和 [3Sum](http://www.leetcode.com/) 的思路基本一样，先对数组进行排序，然后遍历这个排序数组，用两个指针分别指向当前元素的下一个和数组尾部，判断三者的和与 `target` 的差值来移动两个指针，并更新其结果，当然，如果三者的和直接与 `target` 值相同，那么返回 `target` 结果即可。
+题意是让你从数组中找出最接近 `target` 的三个数的和，该题和 [3Sum][015] 的思路基本一样，先对数组进行排序，然后遍历这个排序数组，用两个指针分别指向当前元素的下一个和数组尾部，判断三者的和与 `target` 的差值来移动两个指针，并更新其结果，当然，如果三者的和直接与 `target` 值相同，那么返回 `target` 结果即可。
 
 ```java
 public class Solution {
@@ -1138,7 +1138,7 @@ public class Solution {
 ```
 
 
-# [Letter Combinations of a Phone Number](http://www.leetcode.com/)
+# [017: Letter Combinations of a Phone Number](http://www.leetcode.com/)
 
 ## Description
 
@@ -1215,7 +1215,7 @@ class Solution {
 ```
 
 
-# [4Sum](http://www.leetcode.com/)
+# [018: 4Sum](http://www.leetcode.com/)
 
 ## Description
 
@@ -1239,7 +1239,7 @@ A solution set is:
 
 ## 思路 0
 
-题意是让你从数组中找出所有四个数的和为 `target` 的元素构成的非重复序列，该题和 [3Sum](http://www.leetcode.com/) 的思路基本一样，先对数组进行排序，然后遍历这个排序数组，因为这次是四个元素的和，所以外层需要两重循环，然后还是用两个指针分别指向当前元素的下一个和数组尾部，判断四者的和与 `target` 的大小来移动两个指针，其中细节操作还是优化和去重。
+题意是让你从数组中找出所有四个数的和为 `target` 的元素构成的非重复序列，该题和 [3Sum][015] 的思路基本一样，先对数组进行排序，然后遍历这个排序数组，因为这次是四个元素的和，所以外层需要两重循环，然后还是用两个指针分别指向当前元素的下一个和数组尾部，判断四者的和与 `target` 的大小来移动两个指针，其中细节操作还是优化和去重。
 
 ```java
 class Solution {
@@ -1287,7 +1287,7 @@ class Solution {
 
 ## 思路 1
 
-从 [Two Sum](http://www.leetcode.com/)、[3Sum](http://www.leetcode.com/) 到现在的 4Sum，其实都是把高阶降为低阶，那么我们就可以写出 kSum 的函数来对其进行降阶处理，降到 2Sum 后那么我们就可以对其进行最后的判断了，代码如下所示，其也做了相应的优化和去重。
+从 [Two Sum][001]、[3Sum][015] 到现在的 4Sum，其实都是把高阶降为低阶，那么我们就可以写出 kSum 的函数来对其进行降阶处理，降到 2Sum 后那么我们就可以对其进行最后的判断了，代码如下所示，其也做了相应的优化和去重。
 
 ```java
 class Solution {
@@ -1339,7 +1339,7 @@ class Solution {
 
 
 
-# [Remove Nth Node From End of List](http://www.leetcode.com/)
+# [019: Remove Nth Node From End of List](http://www.leetcode.com/)
 
 ## Description
 
@@ -1397,7 +1397,7 @@ class Solution {
 ```
 
 
-# [Valid Parentheses](http://www.leetcode.com/)
+# [020: Valid Parentheses](http://www.leetcode.com/)
 
 ## Description
 
@@ -1434,7 +1434,7 @@ class Solution {
 ```
 
 
-# [Merge Two Sorted Lists](http://www.leetcode.com/)
+# [021: Merge Two Sorted Lists](http://www.leetcode.com/)
 
 ## Description
 
@@ -1484,7 +1484,7 @@ class Solution {
 ```
 
 
-# [Generate Parentheses](http://www.leetcode.com/)
+# [022: Generate Parentheses](http://www.leetcode.com/)
 
 ## Description
 
@@ -1570,7 +1570,7 @@ class Solution {
 ```
 
 
-# [Merge k Sorted Lists](http://www.leetcode.com/)
+# [023: Merge k Sorted Lists](http://www.leetcode.com/)
 
 ## Description
 
@@ -1663,7 +1663,7 @@ class Solution {
 ```
 
 
-# [Swap Nodes in Pairs](http://www.leetcode.com/)
+# [024: Swap Nodes in Pairs](http://www.leetcode.com/)
 
 ## Description
 
@@ -1732,7 +1732,7 @@ class Solution {
 ```
 
 
-# [Reverse Nodes in k-Group](http://www.leetcode.com/)
+# [025: Reverse Nodes in k-Group](http://www.leetcode.com/)
 
 ## Description
 
@@ -1829,7 +1829,7 @@ class Solution {
 ```
 
 
-# [Remove Duplicates from Sorted Array](http://www.leetcode.com/)
+# [026: Remove Duplicates from Sorted Array](http://www.leetcode.com/)
 
 ## Description
 
@@ -1870,7 +1870,7 @@ class Solution {
 ```
 
 
-# [Remove Element](http://www.leetcode.com/)
+# [027: Remove Element](http://www.leetcode.com/)
 
 ## Description
 
@@ -1910,7 +1910,7 @@ class Solution {
 ```
 
 
-# [Implement strStr()](http://www.leetcode.com/)
+# [028: Implement strStr()](http://www.leetcode.com/)
 
 ## Description
 
@@ -1956,7 +1956,7 @@ class Solution {
 ```
 
 
-# [Divide Two Integers](http://www.leetcode.com/)
+# [029: Divide Two Integers](http://www.leetcode.com/)
 
 ## Description
 
@@ -2001,7 +2001,7 @@ class Solution {
 ```
 
 
-# [Substring with Concatenation of All Words](http://www.leetcode.com/)
+# [030: Substring with Concatenation of All Words](http://www.leetcode.com/)
 
 ## Description
 
@@ -2030,7 +2030,7 @@ You should return the indices: `[0,9]`.
 ```
 
 
-# [Search in Rotated Sorted Array](http://www.leetcode.com/)
+# [033: Search in Rotated Sorted Array](http://www.leetcode.com/)
 
 ## Description
 
@@ -2082,7 +2082,7 @@ class Solution {
 ```
 
 
-# [Search Insert Position](http://www.leetcode.com/)
+# [035: Search Insert Position](http://www.leetcode.com/)
 
 ## Description
 
@@ -2140,7 +2140,7 @@ class Solution {
 ```
 
 
-# [Count and Say](http://www.leetcode.com/)
+# [038: Count and Say](http://www.leetcode.com/)
 
 ## Description
 
@@ -2210,7 +2210,7 @@ class Solution {
 ```
 
 
-# [Multiply Strings](http://www.leetcode.com/)
+# [043: Multiply Strings](http://www.leetcode.com/)
 
 ## Description
 
@@ -2263,7 +2263,7 @@ class Solution {
 ```
 
 
-# [Wildcard Matching](http://www.leetcode.com/)
+# [044: Wildcard Matching](http://www.leetcode.com/)
 
 ## Description
 
@@ -2293,7 +2293,7 @@ isMatch("aab", "c*a*b") → false
 
 ## 思路 0
 
-题意是让让你从判断 `s` 字符串是否通配符匹配于 `p`，这道题和[Regular Expression Matching](http://www.leetcode.com/)很是相似，区别在于 `*`，正则匹配的 `*` 不能单独存在，前面必须具有一个字符，其意义是表明前面的这个字符个数可以是任意个数，包括 0 个；而通配符的 `*` 是可以随意出现的，跟前面字符没有任何关系，其作用是可以表示任意字符串。在此我们可以利用 *贪心算法* 来解决这个问题，需要两个额外指针 `p` 和 `match` 来分别记录最后一个 `*` 的位置和 `*` 匹配到 `s` 字符串的位置，其贪心体现在如果遇到 `*`，那就尽可能取匹配后方的内容，如果匹配失败，那就回到上一个遇到 `*` 的位置来继续贪心。
+题意是让让你从判断 `s` 字符串是否通配符匹配于 `p`，这道题和[Regular Expression Matching][010]很是相似，区别在于 `*`，正则匹配的 `*` 不能单独存在，前面必须具有一个字符，其意义是表明前面的这个字符个数可以是任意个数，包括 0 个；而通配符的 `*` 是可以随意出现的，跟前面字符没有任何关系，其作用是可以表示任意字符串。在此我们可以利用 *贪心算法* 来解决这个问题，需要两个额外指针 `p` 和 `match` 来分别记录最后一个 `*` 的位置和 `*` 匹配到 `s` 字符串的位置，其贪心体现在如果遇到 `*`，那就尽可能取匹配后方的内容，如果匹配失败，那就回到上一个遇到 `*` 的位置来继续贪心。
 
 ```java
 class Solution {
@@ -2355,7 +2355,7 @@ class Solution {
 ```
 
 
-# [Group Anagrams](http://www.leetcode.com/)
+# [049: Group Anagrams](http://www.leetcode.com/)
 
 ## Description
 
@@ -2408,7 +2408,7 @@ class Solution {
 ```
 
 
-# [Pow(x, n)](http://www.leetcode.com/)
+# [050: Pow(x, n)](http://www.leetcode.com/)
 
 ## Description
 
@@ -2453,7 +2453,7 @@ class Solution {
 ```
 
 
-# [Maximum Subarray](http://www.leetcode.com/)
+# [053: Maximum Subarray](http://www.leetcode.com/)
 
 ## Description
 
@@ -2519,7 +2519,7 @@ class Solution {
 ```
 
 
-# [Merge Intervals](http://www.leetcode.com/)
+# [056: Merge Intervals](http://www.leetcode.com/)
 
 ## Description
 
@@ -2578,7 +2578,7 @@ class Solution {
 ```
 
 
-# [Insert Interval](http://www.leetcode.com/)
+# [057: Insert Interval](http://www.leetcode.com/)
 
 ## Description
 
@@ -2646,7 +2646,7 @@ class Solution {
 ```
 
 
-# [Length of Last Word](http://www.leetcode.com/)
+# [058: Length of Last Word](http://www.leetcode.com/)
 
 ## Description
 
@@ -2683,7 +2683,7 @@ class Solution {
 ```
 
 
-# [Plus One](http://www.leetcode.com/)
+# [066: Plus One](http://www.leetcode.com/)
 
 ## Description
 
@@ -2723,7 +2723,7 @@ class Solution {
 ```
 
 
-# [Add Binary](http://www.leetcode.com/)
+# [067: Add Binary](http://www.leetcode.com/)
 
 ## Description
 
@@ -2774,7 +2774,7 @@ class Solution {
 ```
 
 
-# [Text Justification](http://www.leetcode.com/)
+# [068: Text Justification](http://www.leetcode.com/)
 
 ## Description
 
@@ -2864,7 +2864,7 @@ class Solution {
 ```
 
 
-# [Sqrt(x)](http://www.leetcode.com/)
+# [069: Sqrt(x)](http://www.leetcode.com/)
 
 ## Description
 
@@ -2909,7 +2909,7 @@ class Solution {
 ```
 
 
-# [Climbing Stairs](http://www.leetcode.com/)
+# [070: Climbing Stairs](http://www.leetcode.com/)
 
 ## Description
 
@@ -2963,7 +2963,7 @@ class Solution {
 ```
 
 
-# [Remove Duplicates from Sorted List](http://www.leetcode.com/)
+# [083: Remove Duplicates from Sorted List](http://www.leetcode.com/)
 
 ## Description
 
@@ -3008,7 +3008,7 @@ class Solution {
 ```
 
 
-# [Merge Sorted Array](http://www.leetcode.com/)
+# [088: Merge Sorted Array](http://www.leetcode.com/)
 
 ## Description
 
@@ -3038,7 +3038,7 @@ class Solution {
 ```
 
 
-# [Same Tree](http://www.leetcode.com/)
+# [100: Same Tree](http://www.leetcode.com/)
 
 ## Description
 
@@ -3112,7 +3112,7 @@ class Solution {
 ```
 
 
-# [Symmetric Tree](http://www.leetcode.com/)
+# [101: Symmetric Tree](http://www.leetcode.com/)
 
 ## Description
 
@@ -3210,7 +3210,7 @@ class Solution {
 ```
 
 
-# [Maximum Depth of Binary Tree](http://www.leetcode.com/)
+# [104: Maximum Depth of Binary Tree](http://www.leetcode.com/)
 
 ## Description
 
@@ -3244,7 +3244,7 @@ The maximum depth is the number of nodes along the longest path from the root no
 ```
 
 
-# [Binary Tree Level Order Traversal II](http://www.leetcode.com/)
+# [107: Binary Tree Level Order Traversal II](http://www.leetcode.com/)
 
 ## Description
 
@@ -3345,7 +3345,7 @@ class Solution {
 ```
 
 
-# [Convert Sorted Array to Binary Search Tree](http://www.leetcode.com/)
+# [108: Convert Sorted Array to Binary Search Tree](http://www.leetcode.com/)
 
 ## Description
 
@@ -3413,7 +3413,7 @@ class Solution {
 ```
 
 
-# [Balanced Binary Tree](http://www.leetcode.com/)
+# [110: Balanced Binary Tree](http://www.leetcode.com/)
 
 ## Description
 
@@ -3456,7 +3456,7 @@ class Solution {
 ```
 
 
-# [Minimum Depth of Binary Tree](http://www.leetcode.com/)
+# [111: Minimum Depth of Binary Tree](http://www.leetcode.com/)
 
 ## Description
 
@@ -3530,7 +3530,7 @@ class Solution {
 ```
 
 
-# [Path Sum](http://www.leetcode.com/)
+# [112: Path Sum](http://www.leetcode.com/)
 
 ## Description
 
@@ -3580,7 +3580,7 @@ class Solution {
 ```
 
 
-# [Pascal's Triangle](http://www.leetcode.com/)
+# [118: Pascal's Triangle](http://www.leetcode.com/)
 
 ## Description
 
@@ -3630,7 +3630,7 @@ class Solution {
 ```
 
 
-# [Pascal's Triangle II](http://www.leetcode.com/)
+# [119: Pascal's Triangle II](http://www.leetcode.com/)
 
 ## Description
 
@@ -3667,7 +3667,7 @@ class Solution {
 ```
 
 
-# [Best Time to Buy and Sell Stock](http://www.leetcode.com/)
+# [121: Best Time to Buy and Sell Stock](http://www.leetcode.com/)
 
 ## Description
 
@@ -3715,7 +3715,7 @@ class Solution {
 ```
 
 
-# [Best Time to Buy and Sell Stock II](http://www.leetcode.com/)
+# [122: Best Time to Buy and Sell Stock II](http://www.leetcode.com/)
 
 ## Description
 
@@ -3743,7 +3743,7 @@ class Solution {
 ```
 
 
-# [Diameter of Binary Tree](http://www.leetcode.com/)
+# [543: Diameter of Binary Tree](http://www.leetcode.com/)
 
 ## Description
 
@@ -3802,7 +3802,7 @@ class Solution {
 ```
 
 
-# [Brick Wall](http://www.leetcode.com/)
+# [554: Brick Wall](http://www.leetcode.com/)
 
 ## Description
 
